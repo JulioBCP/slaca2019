@@ -6,12 +6,15 @@
   display: block;
   text-decoration: none;
 }
+
 title {
   content-visibility: hidden;
 }
+.main {
+  display: flex;
+}
 .left-menu {
-  position: absolute;
-  width: 28%;
+  width: 20%;
   height: 100vh;
   box-shadow: 4px 0 5px 0 rgba(0, 0, 0, 0.2);
 }
@@ -25,9 +28,6 @@ title {
   text-align: center;
   font-family: Roboto, "Helvetica Neue", sans-serif;
   font-weight: bold;
-}
-
-.vertical-menu {
 }
 
 .vertical-menu a {
@@ -45,4 +45,129 @@ title {
 
 .vertical-menu a.active {
   background-color: #04aa6d;
+}
+h5 {
+  font-weight: 40;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  background-color: rgb(245, 237, 220);
+}
+.left-header {
+  padding: 5rem;
+}
+.right-header {
+  display: flex;
+  justify-content: end;
+  align-self: center;
+  gap: 2rem;
+}
+.language {
+  background-color: transparent;
+}
+.login {
+  display: flex;
+}
+.perfil-image {
+  border-radius: 50%;
+}
+.title { grid-area: title; }
+.buttons { grid-area: buttons;}
+.btn-download { grid-area: btn-download; }
+.btn-estrela { grid-area: btn-estrela; }
+.btn-doi { grid-area: btn-doi; }
+.video { grid-area: video; }
+.video { grid-area: video; }
+.details { grid-area: details; }
+.h3 {grid-area: h3;}
+.video-area {
+  display: grid;
+  grid-template-areas: 
+  'title title buttons'
+  'title title h3'
+  'video video details' ;
+  row-gap: 0;
+}
+.video-area {
+  padding: 1rem 1.5rem;
+}
+.buttons {
+  display: flex;
+  gap: 1rem;
+  justify-self: end;
+}
+.title {
+  font-family: roboto, sans-serif;
+  font-weight: bold;
+  color: rgb(241, 131, 4);
+  align-self: center;
+  padding-right: 2rem;
+  padding-bottom: 1.2rem;
+  width: 90%;
+}
+.btn-download, .btn-estrela, .btn-doi {
+  background-color: rgb(241, 131, 4);
+  color: white;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 0.3rem;
+  height: 1.5rem;
+}
+
+.h3 {
+  color: rgb(241, 131, 4);
+  padding: 0.5rem 0;
+}
+sup {
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+  
+}
+.nobreak {
+  display: flex;
+  gap: 0.3rem;
+}
+.nobreak2 {
+  display: flex;
+
+}
+.details-title {
+  background-color: rgb(245, 237, 220);
+  padding: 0.5rem 0;
+  border-radius: 0.5rem 0.5rem 0 0;
+  border-style: solid;
+  border-width: 0.05rem;
+  border-color: rgb(190, 190, 190);
+}
+.presentation, .authors, .universities {
+  padding: 0.5rem;
+}
+.presentation {
+  font-family: Tahoma, sans-serif;
+  font-size: 0.35cm;
+}
+.universities {
+  color: rgb(184, 184, 184);
+  padding-top: 2rem;
+  font-size: small;
+  font-family: Verdana, Tahoma, sans-serif;
+}
+
+.right-details {
+  width: 18rem;
+  justify-self: end;
+  padding: 0 1.5rem;
+}
+.details {
+  max-height: 340px;
+  border-style: solid;
+  border-width: 0.05rem;
+  border-radius: 0.5rem;
+  border-color: rgb(190, 190, 190);
+}
+.details-content {
+  overflow-y: scroll;
+  overflow: hidden;
 }
